@@ -1,0 +1,41 @@
+{
+  "name": "ContinenteQRReader",
+  "displayName": "Continente QR Reader",
+  "expo": {
+    "name": "Continente QR Reader",
+    "slug": "continente-qr-reader",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/images/app-icon.png",
+    "splash": {
+      "image": "./app/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#E30613"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.continente.qrreader",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Esta app precisa de acesso à câmara para ler códigos QR.",
+        "NSMicrophoneUsageDescription": "Esta app precisa de acesso ao microfone para funcionalidades de acessibilidade."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/images/adaptive-icon.png",
+        "backgroundColor": "#E30613"
+      },
+      "package": "com.continente.qrreader",
+      "permissions": ["CAMERA"]
+    },
+    "web": {
+      "favicon": "./app/assets/images/favicon.png"
+    }
+  }
+} 

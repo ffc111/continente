@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "module:metro-react-native-babel-preset",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "^react-native$": "react-native-web",
+        "^react-native-camera$": "react-native-web-camera"
+      }
+    }],
+    "react-native-web",
+    "react-native-reanimated/plugin"
+  ],
+  "env": {
+    "production": {
+      "plugins": ["react-native-paper/babel"]
+    }
+  }
+} 
